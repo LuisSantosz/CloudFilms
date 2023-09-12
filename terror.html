@@ -55,15 +55,17 @@
   </div>
 </div>
 
-      <div class="input-wrapper me-5">
-        <button class="icon"> 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
-          </svg>
-        </button>
-        <input placeholder="Pesquisar" class="input" name="text" type="text">
-      </div>
+  <div class="input-wrapper me-5">
+    <button class="icon" onclick="searchMovies()"> 
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+      </svg>
+    </button>
+    <input id="searchInput" placeholder="Pesquisar" class="input" name="text" type="text">
+    
+  </div>
+
 
 
 
@@ -142,12 +144,12 @@
           <h5 class="card-title">Pearl</h5>
           <p class="card-text">Veja como Pearl se tornou a assassina feroz vista em "X".</p>
             <strong>Data de lançamento:</strong> 16 de janeiro de 2023 <br><br>
-          <a href="https://www.adorocinema.com/filmes/filme-265506/" class="btn btn-dark">Saiba mais</a>
+          <a href="https://www.adorocinema.com/filmes/filme-302679/" class="btn btn-dark">Saiba mais</a>
         </div>
       </div>
 
       <div class="card" style="width: 18rem;">
-        <img src="image/psicopata-americano.jpg" class="card-film3" alt="O Pior Vizinho do Mundo">
+        <img src="image/psicopata-americano.jpg" class="card-film3" alt= "psicopata americano">
         <div class="card-body d-block">
           <h5 class="card-title">Psicopata Americano</h5>
           <p class="card-text">Um rico inversor na cidade de Nova Iorque, Patrick Bateman, esconde seu ego psicópata de seus colegas e amigos enquanto faz realidade suas violentas e hedonísticas fantasías.</p>
@@ -199,17 +201,17 @@
                   
               
                 <div class="card" style="width: 18rem;" >
-                    <img src="image/sobrenatural_porta_vermelha.webp" class="card-film7" alt="Mario">
+                    <img src="image/sobrenatural_porta_vermelha.webp" class="card-film7" alt="Sobrenatural porta Vermelha">
                     <div class="card-body">
                       <h5 class="card-title">Sobrenatural: A Porta Vermelha</h5>
                       <p class="card-text">Josh Lambert segue para o leste para deixar seu filho, Dalton, na faculdade. Mas demônios reprimidos do passado voltam repentinamente para assombrar os dois.</p>
                         <strong>Data de lançamento:</strong> 3 de agosto de 2023 <br><br>
-                      <a href="https://www.adorocinema.com/filmes/filme-269170/" class="btn btn-dark">Saiba mais</a>
+                      <a href="https://www.adorocinema.com/pesquisar/?q=Sobrenatural%3A+A+Porta+Vermelha" class="btn btn-dark">Saiba mais</a>
                     </div>
                   </div>
 
                   <div class="card" style="width: 18rem;" >
-                    <img src="image/bar-mitzvah.jpg" class="card-film8" alt="Aquaman e o Reino Perdido">
+                    <img src="image/bar-mitzvah.jpg" class="card-film8" alt="Você Não Tá Convidada pro meu Bar Mitzva">
                     <div class="card-body">
                       <h5 class="card-title">Você Não Tá Convidada pro meu Bar Mitzva!</h5>
                       <p class="card-text">Stacey Friedman se prepara para seu bat mitzvah, mas seus planos se desfazem comicamente e ameaçam arruinar o evento.</p>
@@ -273,7 +275,10 @@
     </div>
     
 
-  
+ <!-- inicio Script responsavel por pesquisar na API -->
+<div id="movieList"></div>
+<script src="./script/script.js"></script>
+<!-- fim Script responsavel por pesquisar na API --> 
     
 <footer class="bg-dark text-center text-white mt-5">
   <!-- Grid container -->

@@ -55,15 +55,17 @@
   </div>
 </div>
 
-      <div class="input-wrapper me-5">
-        <button class="icon"> 
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
-            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
-          </svg>
-        </button>
-        <input placeholder="Pesquisar" class="input" name="text" type="text">
-      </div>
+  <div class="input-wrapper me-5">
+    <button class="icon" onclick="searchMovies()"> 
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="25px" width="25px">
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z"></path>
+        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#fff" d="M22 22L20 20"></path>
+      </svg>
+    </button>
+    <input id="searchInput" placeholder="Pesquisar" class="input" name="text" type="text">
+    
+  </div>
+
 
 
 
@@ -181,7 +183,7 @@
                   <h5 class="card-title">The Killer</h5>
                   <p class="card-text">Um assassino começa a colapsar psicologicamente enquanto começa a desenvolver uma consciência, mesmo enquanto seus clientes continuam a solicitar seus serviços.</p>
                     <strong>Data de lançamento:</strong> 17 de agosto de 2023 <br><br>
-                  <a href="https://www.adorocinema.com/filmes/filme-311203/" class="btn btn-dark">Saiba mais</a>
+                  <a href="https://www.adorocinema.com/filmes/filme-290655/" class="btn btn-dark">Saiba mais</a>
                 </div>
               </div>
 
@@ -192,7 +194,7 @@
                       <h5 class="card-title">Boogeyman: Seu Medo é Real</h5>
                       <p class="card-text">Ainda se recuperando da trágica morte de sua mãe, uma adolescente e sua irmã mais nova se veem atormentados por uma presença sádica em sua casa e lutam para fazer com que seu pai de luto preste atenção antes que seja tarde demais.</p>
                         <strong>Data de lançamento:</strong> 14 de setembro de 2023 <br><br>
-                      <a href="https://www.adorocinema.com/filmes/filme-302417/" class="btn btn-dark">Saiba mais</a>
+                      <a href="https://www.adorocinema.com/filmes/filme-265750/" class="btn btn-dark">Saiba mais</a>
                     </div>
                   </div>
 
@@ -204,7 +206,7 @@
                       <h5 class="card-title">The Marsh King's Daughter</h5>
                       <p class="card-text">Uma mulher busca vingança contra o homem que sequestrou sua mãe.</p>
                         <strong>Data de lançamento:</strong> 3 de agosto de 2023 <br><br>
-                      <a href="https://www.adorocinema.com/filmes/filme-269170/" class="btn btn-dark">Saiba mais</a>
+                      <a href="https://www.adorocinema.com/filmes/filme-262591/" class="btn btn-dark">Saiba mais</a>
                     </div>
                   </div>
 
@@ -214,7 +216,7 @@
                       <h5 class="card-title">X: A Marca da Morte</h5>
                       <p class="card-text">Em 1979, um grupo de jovens cineastas se propôs a fazer um filme adulto na zona rural do Texas, mas quando seus solitários e idosos anfitriões os pegam em flagrante, o elenco se vê lutando por suas vidas.</p>
                         <strong>Data de lançamento:</strong> 25 de agosto de 2023 <br><br>
-                      <a href="https://www.adorocinema.com/filmes/filme-317341/" class="btn btn-dark">Saiba mais</a>
+                      <a href="https://www.adorocinema.com/pesquisar/?q=X%3A+A+Marca+da+Morte" class="btn btn-dark">Saiba mais</a>
                     </div>
                   </div>
 
@@ -271,7 +273,10 @@
 
     </div>
     
-
+<!-- inicio Script responsavel por pesquisar na API -->
+<div id="movieList"></div>
+<script src="./script/script.js"></script>
+<!-- fim Script responsavel por pesquisar na API -->
   
 <footer class="bg-dark text-center text-white mt-5">
   <!-- Grid container -->
